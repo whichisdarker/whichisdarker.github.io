@@ -8,7 +8,7 @@ const adjustments = {
     red: { brightness: 0.8, paleness: 0.65 },   // Red: Paleness at 0.7 (more pale)
     green: { brightness: 0.8, paleness: 0.5 }, // Green: Paleness at 0.8 (slightly pale)
     blue: { brightness: 0.9, paleness: 0.37 },  // Blue: Bright with paleness at 0.5 (vibrant)
-    yellow: { brightness: 0.7, paleness: 0.35 } // Yellow: Less bright, but quite pale
+    yellow: { brightness: 0.7, paleness: 0.37 } // Yellow: Less bright, but quite pale
 };
 
 document.addEventListener('DOMContentLoaded', () => {
