@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Darkness Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="gameTitle">Which is Darker?</h1>
+    <div id="difficulty">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+    </div>
+    <div id="colorContainer" style="position: relative;">
+        <button id="color1" class="colorButton"></button>
+        <button id="color2" class="colorButton"></button>
+        <div id="arrow" style="position: absolute; display: none;"></div>
+    </div>
+    <button id="submitGuess">Submit Guess</button>
+    <button id="playAgain" style="display:none;">Play Again</button>
+    <p id="result"></p>
+    <p id="disclaimer">Colorblind players, proceed at your own risk</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
