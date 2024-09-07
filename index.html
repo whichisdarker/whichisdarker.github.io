@@ -2,25 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Color Darkness Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which is Darker?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="gameTitle">Which is Darker?</h1>
-    <div id="difficulty">
-        <button id="easy">Easy</button>
-        <button id="medium">Medium</button>
-        <button id="hard">Hard</button>
+
+    <!-- Buttons to select number of colors -->
+    <div id="numColors">
+        <button id="twoColors" class="colorChoice selected">Two Colors</button>
+        <button id="threeColors" class="colorChoice">Three Colors</button>
+        <button id="fourColors" class="colorChoice">Four Colors</button>
     </div>
-    <div id="colorContainer" style="position: relative;">
-        <button id="color1" class="colorButton"></button>
-        <button id="color2" class="colorButton"></button>
-        <div id="arrow" style="position: absolute; display: none;"></div>
-    </div>
+
+    <!-- Buttons to select difficulty -->
+    <!-- <div id="difficulty">
+        <button id="easy" class="diffBtn selected">Easy</button>
+        <button id="medium" class="diffBtn">Medium</button>
+        <button id="hard" class="diffBtn">Hard</button>
+    </div> -->
+
+    <!-- Container for the color buttons -->
+    <div id="colorContainer"></div>
+
+    <!-- Action buttons -->
     <button id="submitGuess">Submit Guess</button>
     <button id="playAgain" style="display:none;">Play Again</button>
+
+    <!-- Display result -->
     <p id="result"></p>
-    <p id="disclaimer">Colorblind players, proceed at your own risk</p>
+
+    <!-- Disclaimer -->
+    <p id="disclaimer">Warning: Colorblind players, proceed at your own risk!</p>
 
     <script src="script.js"></script>
 </body>
